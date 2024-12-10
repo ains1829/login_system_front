@@ -38,7 +38,7 @@ function Login() {
               <Input {...field}  type="password" placeholder="password"  required />
             } />
           </div>
-          <Input type="submit" value="Connexion" className="bg-secondary cursor-pointer" />
+          <Input disabled={authentification.isPending} type="submit" value="Connexion" className="bg-secondary cursor-pointer" />
           {
             error && <span className="text-red-600 font-bold text-center text-xs">Mot de passe incorrect</span>
           }

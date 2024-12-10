@@ -51,7 +51,7 @@ function Register() {
               </span>
             )}
           </div>
-          <Input type="submit" value="Connexion" className="bg-secondary cursor-pointer" />
+          <Input disabled={new_account.isPending} type="submit" value="Connexion" className="bg-secondary cursor-pointer" />
           <div className="content-form text-center">
             <span className="text-xs">Vous avez un compte ? <Link  to="/" className="font-bold text-secondary">Connectez-vous</Link></span>
           </div>
